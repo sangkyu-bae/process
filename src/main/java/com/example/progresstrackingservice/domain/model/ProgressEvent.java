@@ -2,6 +2,7 @@ package com.example.progresstrackingservice.domain.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.time.Instant;
@@ -9,7 +10,7 @@ import java.util.Map;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
+@Builder @Getter
 public class ProgressEvent {
     private String traceId;
     private String service;
